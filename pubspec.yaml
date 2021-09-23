@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  flame: 1.0.0-releasecandidate.14
+  flame:
+    path: ../flame/flame/packages/flame
 
 dev_dependencies:
   flutter_test:
@@ -20,6 +20,6 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:
-  uses-material-design: true
+  uses-material-design: false
   assets:
     - assets/images/

@@ -1,4 +1,3 @@
-import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
 
@@ -6,18 +5,14 @@ import './components/player.dart';
 import './components/enemy_creator.dart';
 
 class SpaceShooterGame extends FlameGame with PanDetector, HasCollidables {
-
   late PlayerComponent player;
-
   int score = 0;
 
   @override
   Future<void> onLoad() async {
+    await super.onLoad();
     add(player = PlayerComponent());
-
     add(EnemyCreator());
-
-    //add(ScoreComponent());
   }
 
   @override
@@ -44,8 +39,8 @@ class SpaceShooterGame extends FlameGame with PanDetector, HasCollidables {
     score++;
   }
 
-  //void playerTakeHit() {
-  //  player.takeHit();
-  //  score = 0;
-  //}
+  void playerTakeHit() {
+    player.takeHit();
+    score = 0;
+  }
 }
