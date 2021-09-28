@@ -17,6 +17,7 @@ class BulletComponent extends SpriteAnimationComponent
           position: Vector2(x, y),
           size: Vector2(10, 20),
         ) {
+    collidableType = CollidableType.passive;
     addHitbox(HitboxRectangle());
   }
 

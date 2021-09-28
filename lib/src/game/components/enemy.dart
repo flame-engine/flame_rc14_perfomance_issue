@@ -13,7 +13,6 @@ class EnemyComponent extends SpriteAnimationComponent
   EnemyComponent(double x, double y)
       : super(position: Vector2(x, y), size: Vector2.all(25)) {
     addHitbox(HitboxRectangle());
-    collidableType = CollidableType.passive;
   }
 
   @override
@@ -27,7 +26,6 @@ class EnemyComponent extends SpriteAnimationComponent
         textureSize: Vector2.all(16),
       ),
     );
-    collidableType = CollidableType.passive;
   }
 
   @override
