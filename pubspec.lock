@@ -53,10 +53,10 @@ packages:
   flame:
     dependency: "direct main"
     description:
-      path: "../flame/flame/packages/flame"
-      relative: true
-    source: path
-    version: "1.0.0-releasecandidate.14"
+      name: flame
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0-releasecandidate.15"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -101,7 +101,7 @@ packages:
       name: ordered_set
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.2.0"
+    version: "4.0.0"
   path:
     dependency: transitive
     description:
